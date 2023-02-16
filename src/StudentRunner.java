@@ -2,6 +2,9 @@ import java.math.BigDecimal;
 
 public class StudentRunner {
     public static void main (String[] args) {
+
+
+
         int[] marks = {95, 98,100};
         Student student = new Student("Aarti", marks);
         int number = student.getNumberOfMarks();

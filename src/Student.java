@@ -5,7 +5,7 @@ public class Student {
     private final String name;
     private final int[] marks;
 
-    public Student(String name, int[] marks) {
+    public Student(String name, int... marks) {//variable argument should be the last argument
         this.name = name;
         this.marks = marks;
     }
