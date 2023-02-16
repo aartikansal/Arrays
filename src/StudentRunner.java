@@ -8,7 +8,7 @@ public class StudentRunner {
         System.out.println("sum of marks: " + sum);
         int maximumMark = student.getmaximumMark();
         System.out.println("maximum mark: " + maximumMark);
-
-        //int minimumMark = student.getminimumMark();
+        int minimumMark = student.getminimumMark();
+        System.out.println("minimum mark: " + minimumMark);
     }
 }
