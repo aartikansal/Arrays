@@ -6,4 +6,8 @@ public class Student {
         this.name= name;
         this.marks = marks; 
     }
+
+    public int getNumberOfMarks() {
+        return marks.length;
+    }
 }
