@@ -6,5 +6,9 @@ public class StudentRunner {
         System.out.println("number of marks: " + number);
         int sum = student.getTotalSumOfMarks();
         System.out.println("sum of marks: " + sum);
+        int maximumMark = student.getmaximumMark();
+        System.out.println("maximum mark: " + maximumMark);
+
+        //int minimumMark = student.getminimumMark();
     }
 }

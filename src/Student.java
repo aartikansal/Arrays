@@ -18,4 +18,14 @@ public class Student {
        }
         return sum;
     }
+
+    public int getmaximumMark() {
+        int maximum = 0;//95,98,10
+        for(int mark: marks){
+            if(mark>maximum){
+                maximum = mark;
+            }
+        }
+        return maximum;
+    }
 }
