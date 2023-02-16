@@ -10,4 +10,12 @@ public class Student {
     public int getNumberOfMarks() {
         return marks.length;
     }
+
+    public int getTotalSumOfMarks() {
+        int sum = 0;
+       for(int mark: marks){
+             sum = sum + mark;
+       }
+        return sum;
+    }
 }
