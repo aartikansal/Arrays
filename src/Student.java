@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 public class Student {
     private final String name;
     private final int[] marks;
@@ -20,7 +22,7 @@ public class Student {
     }
 
     public int getmaximumMark() {
-        int maximum = 0;//95,98,10
+        int maximum = 0;//95,98,10// int maximum = Integer.MIN_VALUE;
         for (int mark : marks) {
             if (mark > maximum) {
                 maximum = mark;
@@ -30,7 +32,7 @@ public class Student {
     }
 
     public int getminimumMark() {
-        int minimum = 0;
+        int minimum = 0;//int minimum = Integer.MAX_VALUE;
         for (int mark : marks) {
             if (mark < minimum) {
                 minimum = mark;
@@ -39,5 +41,10 @@ public class Student {
         return minimum;
     }
 
+    public BigDecimal getAverageMarks() {
+        int sum = getTotalSumOfMarks();
+        int number = getNumberOfMarks();
+        return new BigDecimal(sum).divide(new BigDecimal(number));
+    }
 }
 
